@@ -5,6 +5,7 @@ FILE = "saved_colours.json"
 
 
 def save_to_json(index: int, rgb: tuple, hsl: tuple, hex_value: str):
+    """Save colour hex to a json file"""
     new_data = {
         index: {
             "rgb": rgb,
@@ -29,6 +30,8 @@ def save_to_json(index: int, rgb: tuple, hsl: tuple, hex_value: str):
 
 
 def delete_from_json(index: int):
+    """deletes saved colour hex stored in the created
+    json file"""
     if os.path.exists(FILE):
         with open(FILE, mode="r") as file_path:
             data = json.load(file_path)

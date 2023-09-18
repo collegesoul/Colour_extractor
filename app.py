@@ -5,11 +5,14 @@ import tkinter as tk
 import extractor
 import save_delete_colours as sdc
 
+
+# declaration for the app window
 app = CTk()
 app.title("Colour Extractor")
 app.geometry("675x450+700+200")
 app.resizable(False, False)
 
+# constants for colours and fonts
 FONT = "Arial"
 DARK_GRAY = "gray15"
 MEDIUM_GRAY = "gray13"
